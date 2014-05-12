@@ -7,7 +7,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <jsp:include page="cabecalho.jsp"></jsp:include>
-</br></br></br>
+<br/><br/><br/>
 <h1><span class="logo_colour">Cadastro de Usuários</span></h1>
 <span class="logo_colour"></span>
 <table border="1">

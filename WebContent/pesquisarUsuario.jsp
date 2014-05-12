@@ -1,38 +1,33 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-
-
 <jsp:include page="cabecalho.jsp"></jsp:include>
 
-</br>
-</br>
-</br>
+<br/>
+<br/>
+<br/>
 
 <form id="formPesquisaUsuario" action="ServletPesquisaUsuario" method="post">
 	<fieldset>
-		</br>
+		<br/>
 		<legend>Pesquisar Usuários</legend>
 
 		<input type="radio" name="pesquisaRadio" id="nome" value="nomeRadio" checked="checked" />
 		<label for="nome"> Nome: </label><input value="${usuario.nome}"type="text" name="nome" id="nome" />
-		</br></br>
+		<br/><br/>
 		
 		<input type="radio" name="pesquisaRadio" id="email" value="emailRadio" />
 		<label for="email"> E-mail: </label><input value="${usuario.login}" type="text" name="email" id="email" />
-		<br></br>
+		<br><br/>
 	
 		<input type="radio" name="pesquisaRadio" id="listarTodos" value="listartodosRadio" />
 		<label for="listarTodos"> Listar Todos</label>
-		</br></br>
+		<br/><br/>
 		
 		<input value="Pesquisar" type="submit" />
-		</br></br></br>
+		<br/><br/><br/>
 
 		<c:if test="${not empty usuarios}">
-			<table id="tabelaListaUsuarios" border="1" ">
+			<table id="tabelaListaUsuarios" border="1">
 				<thead>
 					<tr class="tabelaPesquisa">
 						<td></td>
@@ -57,7 +52,7 @@
 			</table>
 		</c:if>
 		<input value="Alterar" type="button" /> <input value="Excluir" type="button" />
-		</br></br></br>
+		<br/><br/><br/>
 
 		<script type="text/javascript">
 			function validar(obj1) {
@@ -70,8 +65,8 @@
 
 	</fieldset>
 </form>
-</br>
-</br>
-</br>
+<br/>
+<br/>
+<br/>
 
 <jsp:include page="rodape.jsp"></jsp:include>
